@@ -1,5 +1,23 @@
+*{
+  
+  /* outline:2px solid yellow; */
+}
+:root{
+  --nav-page-sep-margin:100px;
+  --button-color:#f6740a;
+
+  --header-color:rgb(37, 37, 37);
+  --another-color:#282c34;
+  --icon-color:#faa346;
+  --strip-color:#e2e2e4;
+  background-color: rgb(251, 251, 251);
+
+}
+
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -13,6 +31,9 @@
   }
 }
 
+button:hover{
+  cursor:pointer;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

@@ -1,0 +1,8 @@
+#rating-cont input  {
+    display:none;
+}
+
+#rating-cont{
+    display:flex;
+    flex-direction: row;
+}

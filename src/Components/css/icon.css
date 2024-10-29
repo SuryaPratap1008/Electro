@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin:0px ;
+    padding:0px;
+}
+.merch-ic-box{
+ 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+
+}
+.merchn{
+    font-size: 1rem;
+}
+.merch-ic-cont{
+    /* width:15%; */
+    min-width: 60px;
+    min-height: 60px;
+    
+    width:145px;
+    height:145px;
+ 
+
+    /* border:5px solid var(--button-color); */
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(255, 176, 119);
+    background-color: rgb(215, 215, 215);
+    background-color: var(--header-color);
+    
+}
+.merch-icon{
+    width:50%;
+    
+    width:40%;
+    margin:auto;
+    display:block
+    /* height:100%; */
+}
+
+@media (max-width:1320){
+    .merch-ic-cont{
+        width:8%;
+        height:8%;
+    }
+}

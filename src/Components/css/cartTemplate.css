@@ -1,0 +1,126 @@
+.cart-template{
+    padding:40px 20px;
+    /* border:2px solid red; */
+    border-bottom:1px solid black;
+    /* padding-block: 50px; */
+    height: 280px;
+    /* border:2px solid black; */
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    gap:30px;
+
+}
+.cart-template-img{
+    width:30%;
+    /* border:2px solid red; */
+    overflow:hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: antiquewhite; */
+    
+    box-shadow: 0px 1px 5px 1px;
+    
+}
+.cart-template img{
+    width:100%;
+    padding:10px
+    /* height:100%; */
+
+}
+.cart-template-right{
+    
+    width:70%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cart-template-title-price{
+    /* padding-block: 20px; */
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    /* justify-content: space-between; */
+    /* border:2px solid red; */
+}
+.cart-template-title{
+    font-weight: 600;
+}
+.cart-template-price{
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+.cart-template-update-remove{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    /* border:2px solid black; */
+    justify-content: space-between;
+    align-items:  flex-end;
+}
+.quant-mod-cont{
+    width:30%;
+    height:100%;
+   
+}
+.cart-action{
+    width:25%;
+    height:40px;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 2px 0px;
+    border:none;
+}
+
+.remove-cart{
+    /* background-color: rgb(255, 85, 85); */
+}
+.update-cart{
+    /* background-color: rgb(122, 255, 131); */
+}
+
+@keyframes actionButton{
+    from{background-color:white;color:black}
+    to{background-color:var(--header-color);color:white}
+}
+.cart-action:hover{
+    animation-name: actionButton;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@media(max-width:550px){
+    .cart-template{
+        flex-direction: column;
+        height:fit-content;
+
+
+    }
+    .cart-template-img{
+        width:40%;
+        /* margin:auto; */
+        /* height:20px; */
+    }
+    .cart-template-right{
+        width:100%;
+    }
+    .quant-mod-cont{
+        width:175px;
+        height:50px
+        /* border:2px solid */
+    }
+    .cart-template-update-remove{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap:20px;
+    }
+    .cart-action{
+        width:175px;
+        height:50px
+    }
+}

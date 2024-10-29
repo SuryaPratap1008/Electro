@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+#nav-cont {
+    border-bottom: 1px solid black;
+    /* border: 1px solid black; */
+    width: 1300px; /* Changed to 90% for better mobile support */
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    /* margin-bottom: 40px; */
+    padding-block: 10px;
+    /* height: auto; Allow height to adjust based on content */
+    font-size: 15px; /* Base font size */
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+    /* flex-wrap: wrap; Allow items to wrap on small screens */
+}
+
+.nav-element {
+    text-decoration: none;
+    color: black;
+    padding: 5px 0px; /*Padding for clickable area*/
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.nav-element:hover {
+  color:var(--button-color);
+  text-decoration: underline;
+}
+
+#nav-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: auto; /* Allow width to adjust */
+}
+
+#nav-icons button {
+    width: auto; /* Auto width for buttons */
+    height: 100%;
+    font-size: 20px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(250, 169, 112);
+    font-family: "New Amsterdam", sans-serif;
+    padding: 5px 10px; /* Padding for buttons */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1320px){
+    #nav-cont{
+        width:95%;
+        gap:1px;
+        /* border:2px solid red; */
+    }
+    }
+ 
+@media (max-width: 1010px){
+    #nav-cont{
+       display:none;
+        /* border:2px solid red; */
+    }
+    }
+ 
+@media (max-width: 800px) {
+    #nav-cont {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 10px; /* Reduce padding */
+    }
+
+    nav {
+        justify-content: flex-start; /* Align nav items to the left */
+        width: 100%; /* Full width */
+        gap: 10px; /* Reduce gap for smaller screens */
+    }
+
+    #nav-icons {
+        width: 100%; /* Full width for icons section */
+        margin-top: 10px; /* Space between nav and icons */
+        justify-content: flex-start; /* Align icons to the left */
+    }
+
+    #nav-icons button {
+        width: 100%; /* Full width buttons on mobile */
+        margin: 5px 0; /* Margin between buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    #nav-cont {
+        font-size: 16px; /* Reduce font size for very small screens */
+    }
+}
+
+
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); */
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+#shipping-info-cont{
+    font-size: 1rem;
+display:flex;
+flex-direction: column;
+gap:50px;
+padding-block: 50px;
+}
+
+#return-cont{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+#return-cont-divs{
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+#shipping-cont{
+    display:flex;
+    flex-direction: column;
+    gap:30px
+}
