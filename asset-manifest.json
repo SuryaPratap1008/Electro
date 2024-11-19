@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Electro/static/css/main.76b63202.css",
+    "main.js": "/Electro/static/js/main.3e478059.js",
+    "static/js/308.ffbc2183.chunk.js": "/Electro/static/js/308.ffbc2183.chunk.js",
+    "static/js/453.349dea40.chunk.js": "/Electro/static/js/453.349dea40.chunk.js",
+    "static/media/back2.jpg": "/Electro/static/media/back2.3ba4493702fac2c2ae8d.jpg",
+    "static/media/phone-w.png": "/Electro/static/media/phone-w.196227fdbdd735f3761b.png",
+    "static/media/electo-logo-s.png": "/Electro/static/media/electo-logo-s.54039873f14fad33acc8.png",
+    "static/media/electro-new-logo-2.png": "/Electro/static/media/electro-new-logo-2.d634bf7f9371694b119c.png",
+    "static/media/hp-w.png": "/Electro/static/media/hp-w.ef53d921460906910cc8.png",
+    "static/media/speaker-w.png": "/Electro/static/media/speaker-w.f2bf9b1a7d2632a8576a.png",
+    "static/media/wm-w.png": "/Electro/static/media/wm-w.445219a425acd3f5fcb5.png",
+    "static/media/ac-w.png": "/Electro/static/media/ac-w.abbff8069c87fd4290dc.png",
+    "static/media/cart-b.png": "/Electro/static/media/cart-b.d099017ebff2df25f473.png",
+    "static/media/tv-w.png": "/Electro/static/media/tv-w.f8a179d75ec75fed3020.png",
+    "static/media/logo.svg": "/Electro/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Electro/index.html",
+    "main.76b63202.css.map": "/Electro/static/css/main.76b63202.css.map",
+    "main.3e478059.js.map": "/Electro/static/js/main.3e478059.js.map",
+    "308.ffbc2183.chunk.js.map": "/Electro/static/js/308.ffbc2183.chunk.js.map",
+    "453.349dea40.chunk.js.map": "/Electro/static/js/453.349dea40.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76b63202.css",
+    "static/js/main.3e478059.js"
+  ]
+}
