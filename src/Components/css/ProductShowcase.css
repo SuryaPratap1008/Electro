@@ -30,13 +30,19 @@
     flex-wrap: nowrap;
     scroll-behavior: smooth;
     scroll-snap-type: inline mandatory;
-    gap:20px;
+    gap:40px;
+    animation:template forwards 500ms ;
+    animation-timeline: view(block);
     /* border:2px solid black; */
-    padding-inline: 100px;
+    /* padding-inline: 100px; */
     /* justify-content: space-around; */
 
 
 
+}
+@keyframes template{
+    from{scale:0.9;opacity:0.8}
+    to{scale:1;opacity:1}
 }
 
 

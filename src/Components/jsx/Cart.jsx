@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import '../css/cart.css'
 import axios from "axios";
+import {Link} from 'react-router-dom'
 // import Cart_quantity_mod from "./Cart_quantity_mod";
 import CartTemplate from "./CartTemplate";
 export default function Cart() {
@@ -83,9 +84,17 @@ export default function Cart() {
   }
   else{
     return (
-      <>
-      <span>Please Login to access your cart</span>
-      </>
+      <div id="cart-cont-empty">
+
+        <span>Please Login to access your cart</span>
+        <Link
+                  className="auth-link"
+                  to="/login"
+                >
+                  <button>LogIn</button>
+                </Link>
+      </div>
+      
     )
   }
 }

@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import {useNavigate } from "react-router-dom";
 import "../css/signup.css";
 import axios from "axios";
-export default function SignUp() {
+export default function SignUp(props) {
   const navigate =useNavigate()
   const firstName = useRef(null);
   const lastName = useRef(null);
@@ -85,6 +85,7 @@ export default function SignUp() {
           }
           else{
             localStorage.setItem("token",res.data.token)
+
             navigate('/')
 
           }

@@ -13,7 +13,8 @@
     font-weight: 600;
 
     /* background-color: rgb(250, 169, 112); */
-    background-color: var(--button-color);
+    background-color: var(--header-color);
+    color:white;
     border:1px solid black
 }
 #quan-controller input{

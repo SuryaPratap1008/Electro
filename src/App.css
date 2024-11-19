@@ -7,14 +7,20 @@
   --button-color:#f6740a;
 
   --header-color:rgb(37, 37, 37);
+  /* --header-color:linear-gradient(to right, red,blue); */
+  --black-white-gradient: linear-gradient(to right, black 0% 50%,rgb(0, 0, 0)100%);
   --another-color:#282c34;
   --icon-color:#faa346;
   --strip-color:#e2e2e4;
   background-color: rgb(251, 251, 251);
 
 }
-
-
+body{
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+  display:none;
+}
 .App {
   text-align: center;
 

@@ -32,7 +32,8 @@
     border-radius: 50%;
     background-color: rgb(255, 176, 119);
     background-color: rgb(215, 215, 215);
-    background-color: var(--header-color);
+    /* background-color: var(--header-color); */
+    background-image: var(--black-white-gradient);
     
 }
 .merch-icon{

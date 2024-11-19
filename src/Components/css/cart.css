@@ -1,6 +1,15 @@
 
+#cart-cont-empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width:1300px;
+    margin:auto;
+}
 #cart-cont{
-
+    min-height: 50vh;
+   
     width:1300px;
     max-width: 1300px;
     /* margin: 100px auto; */
@@ -49,8 +58,9 @@
 #summary-section button{
     height:50px;
    
-    background-color: var(--button-color);
+    background-color: var(--header-color);
     margin-bottom: 100px;
+    color:white;
     border:1px solid black;
 }
     #product-section{

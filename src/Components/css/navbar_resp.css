@@ -3,19 +3,21 @@
 }
 
 #nav-cont {
-    border-bottom: 1px solid black;
+    /* overflow:hidden; */
     /* border: 1px solid black; */
-    width: 1300px; /* Changed to 90% for better mobile support */
+    width: 1300px; 
     max-width: 1300px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    
     align-items: center;
     margin: auto;
-    /* margin-bottom: 40px; */
+   
     padding-block: 10px;
-    /* height: auto; Allow height to adjust based on content */
+    padding-inline: 5px;
+    height: auto; 
     font-size: 15px; /* Base font size */
     font-weight: 700;
 }
@@ -31,6 +33,7 @@ nav {
 
 .nav-element {
     text-decoration: none;
+    font-size: 1.1rem;
     color: black;
     padding: 5px 0px; /*Padding for clickable area*/
     transition: background-color 0.3s; /* Smooth hover effect */
@@ -38,7 +41,7 @@ nav {
 
 .nav-element:hover {
   color:var(--button-color);
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 #nav-icons {
@@ -49,16 +52,16 @@ nav {
     width: auto; /* Allow width to adjust */
 }
 
-#nav-icons button {
-    width: auto; /* Auto width for buttons */
+/* #nav-icons button {
+    width: auto;
     height: 100%;
     font-size: 20px;
     color: black;
     border: 1px solid black;
     background-color: rgb(250, 169, 112);
     font-family: "New Amsterdam", sans-serif;
-    padding: 5px 10px; /* Padding for buttons */
-}
+    padding: 5px 10px; 
+} */
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1320px){

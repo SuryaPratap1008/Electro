@@ -139,11 +139,11 @@ export default function Header() {
                 onClick={mobileNav}
                 alt=""
               />
-              <img src={require("../images/icons/search-w.png")} alt="" />
+              <img src={require("../images/icons/search-b.png")} alt="" />
             </div>
             <Link id="logo-link" to="/">
               <img
-                src={require("../images/logo/electo-logo-w.png")}
+                src={require("../images/logo/electro-new-logo-2.png")}
                 id="logo"
                 alt=""
               />
@@ -156,7 +156,7 @@ export default function Header() {
                 // placeholder={a.name}
               ></input>
               <button>
-                <img src={require("../images/icons/search-b.png")} alt="" />
+                <img src={require("../images/icons/search-w.png")} alt="" />
               </button>
             </div>
 
@@ -191,13 +191,13 @@ export default function Header() {
                 </Link>
               </div>
               <Link to="/cart" className="cart">
-                <img src={require("../images/icons/cart2-w.png")} alt="" />
+                <img src={require("../images/icons/cart2-b.png")} alt="" />
               </Link>
               <div id="cart-count">3</div>
             </div>
             <div id="mobile-view-right" className="mobile-view">
-              <Link to="/myaccount" ><img src={require("../images/icons/user-w.png")} alt="" /></Link>
-              <Link to="/cart" ><img src={require("../images/icons/cart2-w.png")} alt="" /></Link>
+              <Link to="/myaccount" ><img src={require("../images/icons/user-b.png")} alt="" /></Link>
+              <Link to="/cart" ><img src={require("../images/icons/cart2-b.png")} alt="" /></Link>
             </div>
           </div>
         </div>

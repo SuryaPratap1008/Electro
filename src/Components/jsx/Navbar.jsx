@@ -9,22 +9,16 @@ export default function Navbar() {
           <Link to="/" className="nav-element">
             HOME
           </Link>
-          <Link to="/products/phones" className="nav-element">
-            SMARTPHONE
+          <Link to="/faqs" className="nav-element">
+            FAQ'S
           </Link>
-          <Link to="/television" className="nav-element">
-            TELEVISION
+          <Link to="/faqs" className="nav-element">
+            BLOG
           </Link>
-          <Link to="/speakers" className="nav-element">
-            SPEAKER
+          <Link to="/products" className="nav-element">
+            PROUCTS
           </Link>
-          <Link to="/headphones" className="nav-element">
-            HEADPHONE
-          </Link>
-
-          <Link to="/ac" className="nav-element">
-            AIR CONDITIONER
-          </Link>
+         
           <Link to="/about" className="nav-element">
             ABOUT
           </Link>

@@ -90,10 +90,16 @@ font-weight: 600;
 }
 #createAddressbtn{
     height:50px;
-    background-color: var(--button-color);
+    background-color: var(--header-color);
+    color:white;
     width:200px;
     margin-top: 20px;
     font-size: 1.1rem;
+}
+#createAddressbtn:hover{
+    animation-name: actionHover;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
 }
 #orderHistory{
     /* height:200px; */

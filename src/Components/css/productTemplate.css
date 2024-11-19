@@ -5,20 +5,21 @@
     /* margin-right: 40px; */
     /* border:2px solid #faa346; */
     /* border:2px solid black; */
-    border-radius: 5px;
+    border-radius: 30px;
     /* margin-top: 50px; */
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    width:245px;
+    width:400px;
     flex-grow: 0;
     flex-shrink: 0;
     /* border-top: 2px solid var(--header-color); */
     /* border-left: 2px solid var(--header-color); */
-    box-shadow:  1px 1px 10px 1px ;
+    /* box-shadow:  1px 1px 10px 1px ; */
+    border:1px solid black;
     padding-inline:20px;
     padding-block: 20px;
-    height:410px;
+    height:500px;
     background-color: white;
     /* background-color: rgb(36, 36, 36); */
     /* border:2px solid yellow; */
@@ -74,7 +75,7 @@
     height:80%;
 }
 .product-img{
-    width:100%;
+    width:80%;
 
 }
 .product-name{
@@ -101,18 +102,26 @@
 .addtocart{
     width:100%;
     height:50px;
-    
     font-size: 1.2rem;
     border:none;
     border-radius: 3px;
-    background-color: var(--button-color);
+    border-radius: 20px;
+    color:white;
+    /* background-color: var(--header-color); */
+    /* background-image: var(--black-white-gradient); */
+    background-image: var(--black-white-gradient);
+    background-size: 200%;
+    background-position: right;
+    /* background-size: 500%; */
+    transition: background-position 1s;
 
 }
-.addtocart{
-    animation-name: actionHover;
-    animation-duration: 200ms;
+.addtocart:hover{
+    background-position: left;
+    /* animation-name: actionHover;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
-    cursor: pointer;
+    cursor: pointer; */
 }
 
 
@@ -145,7 +154,7 @@
     
 }
 
-@media (max-width: 450px){
+@media (max-width: 476px){
    
         .addtocart{
             height:40px

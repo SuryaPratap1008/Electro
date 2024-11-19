@@ -41,7 +41,7 @@ export default function MediaScroller1(props) {
 
         setClientWidth(showcase.current.clientWidth)
         console.log("the current showcase is " + showcase.current)
-        const toggleCounts = Math.floor(showcase.current.scrollWidth/showcase.current.clientWidth)
+        const toggleCounts = Math.ceil(showcase.current.scrollWidth/showcase.current.clientWidth)
         setToggleCounts(toggleCounts)
       }
       else{

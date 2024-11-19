@@ -12,17 +12,22 @@ import SignUp from "./Components/jsx/SignUp.jsx";
 import ProductDetail from "./Components/jsx/ProductDetail.jsx";
 import Cart from "./Components/jsx/Cart.jsx";
 import Myaccount from "./Components/jsx/Myaccount.jsx";
+import Faqs from "./Components/jsx/Faqs.jsx";
+import About from "./Components/jsx/About.jsx";
+import Contact from "./Components/jsx/Contact.jsx";
 
 let back = require("./Components/images/back2.jpg");
 let style = {
-  width: "100vw",
-  height: "53vh",
+  width: "1300PX",
+  height: "60vh",
   backgroundImage: `url(${back})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundPosition: "center",
   // border:"2px solid black",
   margin: "auto",
+  marginBottom:"50px",
+  marginTop:"20px"
 };
 const router = createBrowserRouter([
 {
@@ -95,6 +100,15 @@ const router = createBrowserRouter([
 },{
   path:"/phones",
   element:<Cart></Cart>
+},{
+  path:"/faqs",
+  element: <Faqs></Faqs>
+},{
+  path:"/about",
+  element: <About></About>
+},{
+  path:"/contact",
+  element: <Contact></Contact>
 }]}
 ])
 function App() {

@@ -62,15 +62,20 @@ box-sizing: border-box;
     font-size: 1.5rem;
     font-weight: 600;
     cursor: pointer;
-    
-    /* border:2px solid rgb(230,230,230) */
+    padding:10px;
+    /* background-color: grey; */
+
+    border-radius: 20px;
+    border:2px solid rgb(230,230,230)
 }
 @keyframes bottomBorder{
     from{
+        background-color: white;
         color:black;
     }
     to{
-        color: var(--icon-color);
+        background-color: rgb(65, 65, 65);
+        color:white;
     }
 }
 .options:hover{
@@ -130,8 +135,9 @@ box-sizing: border-box;
 @media (max-width:768px){
     #ar-head-cont{
         flex-direction: column;
-        gap:20px;
+        gap:40px;
         width:100vw;
+        border:none;
     }
     #pri-cont{
         width:100vw;
