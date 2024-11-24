@@ -8,12 +8,8 @@ router.get("/:category/:brand", async (req, res) => {
   if (req.params.brand !== "all"){
       try {
       const products = await conn.db.collection("products");
-      // console.log(req.params.brand)
-    //   console.log(req.brand)
-      // console.log(products)
       const target = await products
         .find({ category:req.params.category,brand:req.params.brand}).toArray();
-        console.log(target)
       res.send({payload:target,success:true});
     } catch (error) {
      res.send({success:false,payload:[]})
@@ -38,7 +34,7 @@ router.get('/:tag',async (req,res)=>{
     const products = conn.db.collection("products")
   
     const target = await products.find({tag:req.params.tag}).toArray()
-  
+    console.log(target.length)
     res.send({payload:target,success:true})
   }
     catch (error){
@@ -47,8 +43,7 @@ router.get('/:tag',async (req,res)=>{
 
 router.get('/:category/b/brands',async (req,res)=>{
   try {
-    console.log(req.params.category)
-  
+ 
     const products = conn.db.collection('products')
     const brands = await products.find({category:req.params.category},{projection:{brand:1,_id:0}}).toArray()
     const new_brands = []
@@ -57,7 +52,6 @@ router.get('/:category/b/brands',async (req,res)=>{
     })
     function GFG_Fun() {
       let set = new Set(new_brands);
-      console.log(set)
       const newArray = Array.from(set)
       return newArray
   }
@@ -72,14 +66,13 @@ router.get('/:category/b/brands',async (req,res)=>{
 })
 router.get("/fetch/details/det",async(req,res)=>{
   try {
-    // console.log(req.query.slurp)
+
     const products = conn.db.collection('products')
     const payload = await products.find({title:req.query.title}).toArray()
     const identity = payload[0].identity
     const variations = await products.find({category:payload[0].category,identity:identity}).toArray()
-    console.log(variations.length)
-    // console.log(req.query.title)
-    // console.log(payload)
+
+
     if(payload.length!=0){
       res.send({success:true,payload:payload})
 

@@ -8,6 +8,25 @@ export default function Login(props) {
     const [data,setData] = useState(null)
     const usernameRef = useRef(null)
     const passRef = useRef(null)
+    async function checkToken(){
+      console.log("hello")
+      if(localStorage.getItem('token')){
+        let token = localStorage.getItem('token')
+        console.log(token)
+        console.log('hello')
+        await axios.post('auth/login',{auth_token:token}).then((res)=>{
+          console.log(res.data)
+          if (res.data.success == true){
+
+            navigate('/')
+          }
+        })
+
+      }
+    }
+    useEffect(()=>{
+     checkToken()
+    },[])
     async function onLogin(){
 
         

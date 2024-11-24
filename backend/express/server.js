@@ -77,6 +77,15 @@ app.post(
         // throw new Error("Please enter valid credentials")
       }
     }
+    else{
+      const user = await userModel.findById(req.id)
+      if (user){
+        res.send({success:true})
+      }
+      else{
+        res.send({success:false})
+      }
+    }
     // console.log(req.body)
     // res.json({"bud":"thirsty"})
   }
@@ -180,13 +189,11 @@ app.post('/api/account/cart/update-cart',tokenAuthenticate,async (req,res)=>{
   let match = false;
   for(let i = 0;i<cart.length;i++){
       const id = Object.keys(cart[i])[0]
-      console.log("hello")
-      console.log("the loop id is " + id)
-      console.log("the req id is "  + req.body.productId)
+ 
       if(req.body.productId == id){
-        console.log(req.body.count)
+ 
         cart[i][id] = req.body.count
-        console.log(cart[i][id])
+
         await userModel.findByIdAndUpdate(user.id, { $set: { cart: cart } });
         match=true
         res.send({success:true})
@@ -199,7 +206,7 @@ if(match=false){
 })
 app.post("/api/account", tokenAuthenticate, async (req, res) => {
   try {
-    console.log("a request has been recieved");
+
     const user = await userModel.findById(req.id);
     res.send({ success: true, payload: user });
   } catch (error) {
