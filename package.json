@@ -2,7 +2,7 @@
   "name": "electro",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://SuryaPratap1008.github.io/Electro",
+
   "proxy": "http://localhost:4001/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
