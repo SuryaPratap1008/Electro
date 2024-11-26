@@ -15,7 +15,9 @@ const tokenAuthenticator = require("./express/middleware/tokenAuthenticate.js");
 const JWT_SECRET = "happy";
 const app = express();
 app.use(express.json());
-
+app.get('/',(req,res)=>{
+  res.send("hello")
+})
 app.post(
   "/auth/signup",
   [body("email").isEmail(), body("password")],
