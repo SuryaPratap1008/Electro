@@ -1,4 +1,4 @@
-const { userModel, conn } = require("../models/userModel.js");
+const { userModel, conn } = require("./models/userModel.js");
 // import credentialModel from '../models/userModel.mjs'
 const express = require("express");
 const bcrypt = require("bcrypt");
@@ -9,8 +9,8 @@ const {
   ExpressValidator,
 } = require("express-validator");
 const jwt = require("jsonwebtoken");
-const tokenAuthenticate = require("./middleware/tokenAuthenticate.js");
-const tokenAuthenticator = require("./middleware/tokenAuthenticate.js");
+const tokenAuthenticate = require("./express/middleware/tokenAuthenticate.js");
+const tokenAuthenticator = require("./express/middleware/tokenAuthenticate.js");
 
 const JWT_SECRET = "happy";
 const app = express();
@@ -248,7 +248,7 @@ app.get("/api/new/", async (req, res) => {
       .json({ message: "An error occurred while fetching products." });
   }
 });
-app.use("/api/products", require("./routes/productRoutes.js"));
+app.use("/api/products", require("./express/routes/productRoutes.js"));
 
 app.listen(4001, () => {
   console.log("app is running on port 4001");
