@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const conn = mongoose.createConnection("mongodb+srv://choudharymoris:joyboy%40%401@electro.vtnes.mongodb.net/Electro");
+// const conn = mongoose.createConnection("mongodb://localhost:27017/Users");
 conn.on('connected',()=>{
   console.log("successfully connected to the database")
 })
