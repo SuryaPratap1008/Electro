@@ -25,7 +25,7 @@ router.get("/:category/:brand", async (req, res) => {
           
           res.send({payload:target,success:true});
       } catch (error) {
-        res.send({success:false,payload:[]})
+        res.send({success:false,payload:[],error:error})
       }
   }
 });
