@@ -11,8 +11,8 @@ router.get("/:category/:brand", async (req, res) => {
       const target = await products
         .find({ category:req.params.category,brand:req.params.brand}).toArray();
       res.send({payload:target,success:true});
-    } catch (error) {
-     res.send({success:false,payload:[]})
+    } catch (err) {
+     res.send({success:false,payload:[],error:err})
     }
 
   }
@@ -24,8 +24,8 @@ router.get("/:category/:brand", async (req, res) => {
           .find({ category:req.params.category}).toArray();
           
           res.send({payload:target,success:true});
-      } catch (error) {
-        res.send({success:false,payload:[],error:error})
+      } catch (err) {
+        res.send({success:false,payload:[],error:err})
       }
   }
 });

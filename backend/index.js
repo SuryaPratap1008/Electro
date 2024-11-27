@@ -1,4 +1,5 @@
 const { userModel, conn } = require("./models/userModel.js");
+const serverless = require('serverless-http')
 // import credentialModel from '../models/userModel.mjs'
 const express = require("express");
 const bcrypt = require("bcrypt");
@@ -252,6 +253,5 @@ app.get("/api/new/", async (req, res) => {
 });
 app.use("/api/products", require("./express/routes/productRoutes.js"));
 
-app.listen(4001, () => {
-  console.log("app is running on port 4001");
-});
+
+module.exports = serverless(app)
